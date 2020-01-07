@@ -11,8 +11,8 @@ function App() {
         <br />
         <br />
         <br />
-        <Route exact path="/" component={Movie}></Route>
-        <Route exact path="/films" component={Films}></Route>
+        <Route exact path="/" component={Cinema}></Route>
+        <Route exact path="/movie" component={Movie}></Route>
       </div>
     </Router>
   );
