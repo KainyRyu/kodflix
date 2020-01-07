@@ -11,7 +11,9 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Kodflix</h1>
+      <h1>Are you not going to be refresh??</h1>
+      <h2>what the heck?</h2>
+      <button>Click</button>
       {/* <img src={avengers1} alt="Avengers 1" /> */}
       <br />
       <br />
@@ -20,19 +22,19 @@ function App() {
         <div className="item">
           <img src={Avengers} alt="Avengers" />
           <div>
-            <h2>Avengers</h2>
+            <h2 className="overlay">Avengers</h2>
           </div>
         </div>
         <div className="item">
           <img src={Hulk} alt="Hulk" />
           <div>
-            <h2>Hulk</h2>
+            <h2 className="overlay">Hulk</h2>
           </div>
         </div>
         <div className="item">
           <img src={Spiderman} alt="Spiderman" />
           <div>
-            <h2>Spiderman</h2>
+            <h2 className="overlay">Spiderman</h2>
           </div>
         </div>
       </div>
@@ -40,19 +42,19 @@ function App() {
         <div className="item">
           <img src={Thor} alt="Thor" />
           <div>
-            <h2>Thor</h2>
+            <h2 className="overlay">Thor</h2>
           </div>
         </div>
         <div className="item">
           <img src={Ironman} alt="Ironman" />
           <div>
-            <h2>Ironman</h2>
+            <h2 className="overlay">Ironman</h2>
           </div>
         </div>
         <div className="item">
           <img src={Civilwar} alt="Civilwar" />
           <div>
-            <h2>Civil War</h2>
+            <h2 className="overlay">Civil War</h2>
           </div>
         </div>
       </div>
