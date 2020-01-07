@@ -1,12 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function movie({ title, image }) {
+export default function Movie(movie) {
   return (
-    <div className="itemMargin">
-      <div className="item">
-        <img src={image} alt="{title}" />
-        <h2 className="overlay">{title}</h2>
+    <Link to="/{movie.title}" className="item">
+      <div className="itemMargin">
+        <div className="item">
+          <img src={movie.image} alt="{movie.title}" />
+          <h2 className="overlay">{movie.title}</h2>
+        </div>
       </div>
-    </div>
+    </Link>
   );
-}
+};

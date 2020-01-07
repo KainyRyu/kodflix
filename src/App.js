@@ -1,31 +1,33 @@
 import React from "react";
-import Spiderman from "./images/Spiderman.jpg";
-import Avengers from "./images/Avengers.jpg";
-import Thor from "./images/Thor.jpg";
-import Ironman from "./images/Ironman.jpg";
-import Hulk from "./images/Hulk.jpg";
-import Civilwar from "./images/Civilwar.jpg";
-import Movie from "./movie"
+import Cinema from "./cinema";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Are you not going to be refresh??</h1>
-      <button>Click</button>
-      <br />
-      <br />
-      <br />
-      <div className="container">
-        <Movie title="Avengers" image={Avengers} />
-        <Movie title="Spiderman" image={Spiderman} />
-        <Movie title="Hulk" image={Hulk} />
-        <Movie title="Thor" image={Thor} />
-        <Movie title="Ironman" image={Ironman} />
-        <Movie title="Civilwar" image={Civilwar} />
+    <Router>
+      <div className="App">
+        <br />
+        <br />
+        <br />
+        <Route exact path="/" component={Movie}></Route>
+        <Route exact path="/films" component={Films}></Route>
       </div>
-    </div>
+    </Router>
   );
+}
+
+function Home() {
+  return (
+    <div><h1>This Is The HOME Page</h1></div>
+  )
+}
+
+function Films() {
+  return (
+    <div><h1>HELLOOOOOOOOOOOO</h1></div>
+  )
 }
 
 export default App;
