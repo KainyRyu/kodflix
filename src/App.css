@@ -1,16 +1,29 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 10;
 }
-
+.itemMargin{
+  padding: 10px;
+}
 .container {
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
   padding: 50px;
   width: 80%;
+  border: olive 5px solid;
+}
+img{
+  width: 400px;
+  height: 600px;
 }
 .item {
-  flex: 1;
+  justify-content: space-evenly;
   position: relative;
+  
 }
 .overlay {
   margin: 0;
@@ -30,18 +43,10 @@
   opacity: 0.5;
   display: block;
 }
-/* .item:hover {
-  transform: scale(1.1);
-} */
-@media only screen and (max-width: 600px) {
-  .container {
-    display: block;
-  }
-  .item {
-    position: relative;
-  }
+.item:hover {
+  transform: scale(1.05);
 }
-/* @media only screen and (min-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .container {
     display: block;
   }
