@@ -1,33 +1,26 @@
 import React from "react";
 import Cinema from "./cinema";
+import Film from "./film";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <br />
-        <br />
-        <br />
-        <Route exact path="/" component={Cinema}></Route>
-        <Route exact path="/movie" component={Movie}></Route>
-      </div>
-    </Router>
+    <div className="App">
+      <br />
+      <br />
+      <br />
+      <Router>
+        <Switch>
+          <Film />
+
+          <Route exact path="/" component={Cinema}></Route>
+          <Route exact path="/:cinema" component={Film}></Route>
+        </Switch>
+      </Router>
+    </div>
   );
-}
-
-function Home() {
-  return (
-    <div><h1>This Is The HOME Page</h1></div>
-  )
-}
-
-function Films() {
-  return (
-    <div><h1>HELLOOOOOOOOOOOO</h1></div>
-  )
 }
 
 export default App;
