@@ -1,35 +1,36 @@
 .App {
   text-align: center;
+  background-color: #1f1f1f;
+  padding: 0;
 }
 .itemMargin {
   padding: 10px;
   /* margin: 30px 0; */
 }
 .container {
-  margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
+  /* margin: 20px; */
   padding: 50px;
-  width: 80%;
-  border: olive 5px solid;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /* border: rgb(63, 62, 62) 5px solid; */
+  background-color: rgb(19, 19, 19);
 }
 img {
-  width: 400px;
-  height: 600px;
+  width: 90%;
+  height: 90%;
 }
 .item {
-  justify-content: space-evenly;
-  position: relative;
+  width: 600px;
+  height: 900px;
+  flex: 0 0 auto;
+  justify-content: center;
 }
 .overlay {
   margin: 0;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -52,3 +53,6 @@ img {
     position: relative;
   }
 } */
+
+.cinema {
+}

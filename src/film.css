@@ -3,25 +3,25 @@
   flex-wrap: wrap;
   padding: 50px;
   width: 80%;
-  border: steelblue 10px solid;
+  border: red 10px solid;
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .container {
     display: block;
   };
   .item {
     position: relative;
   };
-};
+}; */
 
 .item {
   flex: 1;
-  border: olive 10px solid;
-};
+  border: blue 10px solid;
+}
 
 img {
   width: 30%;
-};
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -33,7 +33,7 @@ img {
   opacity: 0;
   transition: 0.7s ease;
   background-color: white;
-};
+}
 .item:hover .overlay {
   opacity: 0.5;
   display: block;
@@ -41,3 +41,4 @@ img {
 .item:hover {
   transform: scale(1.1);
 }
+

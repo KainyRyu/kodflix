@@ -1,7 +1,7 @@
 import React from "react";
 import Cinema from "./cinema";
-import Film from "./film";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import FilmDetail from "./filmdetail"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
 
@@ -9,12 +9,10 @@ function App() {
   return (
     <div className="App">
       <br />
-      <br />
-      <br />
       <Router>
+        <Cinema />
         <Switch>
-          <Route exact path="/" component={Cinema}></Route>
-          <Route exact path="/:cinema" component={Film}></Route>
+          <Route exact path="/:cinema" component={FilmDetail}></Route>
         </Switch>
       </Router>
     </div>
