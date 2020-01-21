@@ -12,7 +12,7 @@
   padding: 50px;
   width: 100%;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; 
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   /* border: rgb(63, 62, 62) 5px solid; */
