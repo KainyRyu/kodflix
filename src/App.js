@@ -1,21 +1,25 @@
 import React from "react";
 import Cinema from "./cinema";
 import Details from "./detailPage"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import logo from "./logo.png"
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <br />
-      <Router>
+    <Router>
+      <div className="App">
+        <Link to='/'>
+          <img className='logo' src={logo} alt='logo' />
+        </Link>
+        <br />
         <Cinema />
         <Switch>
           <Route exact path="/:cinema" component={Details}></Route>
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 
