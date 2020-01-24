@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import FilmDetails from "./filmDetails"
+import FilmDatas from "./filmDatas"
 import { Link } from "react-router-dom";
 
 export default class Details extends Component {
@@ -7,24 +7,24 @@ export default class Details extends Component {
     constructor(){
         super()
         this.state ={
-            filmDetail: {}
+            filmDatas: {}
         }
     }
 
     componentDidMount() {
         let filmId = this.props.match.params.cinema;
-        let filmDetail = FilmDetails().find(film => film.id === filmId);
-        console.log(filmDetail);
+        let filmDatas = FilmDatas().find(film => film.id === filmId);
+        console.log(filmDatas);
         this.setState({
-            filmDetail // when the key and value are the same
-            // filmDetail: filmDetail
+            filmDatas // when the key and value are the same
+            // filmDatas: filmDatas
         });
     }
 
     render() {
         return(
             <div>
-                <h1 className='filmTitle'>{this.state.filmDetail.title}</h1>
+                <h1 className='filmTitle'>{this.state.filmDatas.title}</h1>
             </div>
         )
     }
@@ -32,7 +32,7 @@ export default class Details extends Component {
 
 
 
-// function FilmDetail(props) {
+// function FilmDatas(props) {
 //     return(
 //     <div>
 //         <Route exact path="/{props.title}" component={props.title}>

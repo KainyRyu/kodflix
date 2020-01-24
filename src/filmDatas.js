@@ -9,7 +9,7 @@ import Ironman3 from "./images/ironman3.jpg"
 import Thor2 from "./images/thor2013.jpg"
 import Wintersoldier from "./images/wintersoldier2014.jpg"
 
-export default function FilmDetails () {
+export default function FilmDatas () {
     return [
       {id:'captain', title:"Captain America: The First Avenger", image: Captain, rating:6.9, detail:'12A | 2h 4min '},
       {id:'captainmarvel', title:"Captain Marvel", image: CaptainMarvel, rating:6.9, detail:'' },

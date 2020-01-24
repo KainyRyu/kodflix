@@ -29,19 +29,19 @@
   /* border: rgb(63, 62, 62) 5px solid; */
   background-color: rgb(19, 19, 19);
 }
+
 img {
   width: 90%;
   height: 90%;
 }
+
 .item {
   width: 600px;
   height: 900px;
   flex: 0 0 auto;
   justify-content: center;
 }
-.filmTitle{
-  color: white;
-}
+
 .overlay {
   margin: 0;
   position: absolute;
@@ -52,17 +52,21 @@ img {
   /* background-color: white; */
   display: none;
 }
+
 .item:hover {
   opacity: 0.7;
   display: block;
 }
+
 .item:hover .overlay {
   opacity: 1;
   display: block;
 }
+
 .item:hover {
   transform: scale(1.05);
 }
+
 /* @media only screen and (max-width: 600px) {
   .container {
     display: block;

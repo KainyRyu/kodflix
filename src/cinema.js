@@ -1,6 +1,6 @@
 import React from "react";
 import Film from "./film";
-import FilmDetails from "./filmDetails"
+import FilmDatas from "./filmDatas"
 
 // import Spiderman from "./images/Spiderman.jpg";
 // import Avengers from "./images/Avengers.jpg";
@@ -14,22 +14,23 @@ export default function Cinema() {
     <div>
       <div className="container">
         {
-          FilmDetails().map(stack => {
+          FilmDatas().map(stack => {
             return(
-          <Film key={stack.title} 
-            id={stack.id} 
-            titleUrl={stack.id} 
-            title={stack.title} 
-            image={stack.image} 
-            rating={stack.rating} 
-            details={stack.detail} 
-          />
-          )})
-
+              <Film key={stack.title} 
+                id={stack.id} 
+                titleUrl={stack.id} 
+                title={stack.title} 
+                image={stack.image} 
+                rating={stack.rating} 
+                details={stack.detail} 
+              />
+            );
+          })
         }
       </div>
     </div>
-  )}
+  );
+};
 
 
 
