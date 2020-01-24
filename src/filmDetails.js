@@ -11,15 +11,15 @@ import Wintersoldier from "./images/wintersoldier2014.jpg"
 
 export default function FilmDetails () {
     return [
-      {titleUrl:'captain', title:"Captain America: The First Avenger", image: Captain, rating:6.9, detail:'12A | 2h 4min '},
-      {titleUrl:'captainmarvel', title:"Captain Marvel", image: CaptainMarvel, rating:6.9, detail:'' },
-      {titleUrl:'ironman1', title:"Iron man", image: Ironman1, rating:7.9, detail:'' },
-      {titleUrl:'hulk', title:"The Incredible Hulk", image: Hulk, rating:6.7, detail:'' },
-      {titleUrl:'ironman2', title:"Iron man 2", image: Ironman2, rating:7.0, detail:'' },
-      {titleUrl:'thor', title:"Thor", image: Thor1, rating:7.0, detail:'' },
-      {titleUrl:'avengers', title:"Avengers Assemble", image: Avengers, rating:8.0, detail:'' },
-      {titleUrl:'ironman3', title:"Iron man 3", image: Ironman3, rating:7.2, detail:'' },
-      {titleUrl:'thor2', title:"Thor: The Dark World", image: Thor2, rating:6.9, detail:'' },
-      {titleUrl:'winstersoldier', title:"Captain America: The Winter Soldier", image: Wintersoldier, rating:7.7, detail:'' }
+      {id:'captain', title:"Captain America: The First Avenger", image: Captain, rating:6.9, detail:'12A | 2h 4min '},
+      {id:'captainmarvel', title:"Captain Marvel", image: CaptainMarvel, rating:6.9, detail:'' },
+      {id:'ironman1', title:"Iron man", image: Ironman1, rating:7.9, detail:'' },
+      {id:'hulk', title:"The Incredible Hulk", image: Hulk, rating:6.7, detail:'' },
+      {id:'ironman2', title:"Iron man 2", image: Ironman2, rating:7.0, detail:'' },
+      {id:'thor', title:"Thor", image: Thor1, rating:7.0, detail:'' },
+      {id:'avengers', title:"Avengers Assemble", image: Avengers, rating:8.0, detail:'' },
+      {id:'ironman3', title:"Iron man 3", image: Ironman3, rating:7.2, detail:'' },
+      {id:'thor2', title:"Thor: The Dark World", image: Thor2, rating:6.9, detail:'' },
+      {id:'winstersoldier', title:"Captain America: The Winter Soldier", image: Wintersoldier, rating:7.7, detail:'' }
     ]
   }

@@ -1,61 +1,54 @@
 import React, { Component } from "react";
+import FilmDetails from "./filmDetails"
 import { Link } from "react-router-dom";
-// import CaptainDetail from "./images/captainDetail.jpg"
-// import CaptainMarvelDetail from "./images/captainMarvelDetail.jpg"
-// import IronmanDetail from "./images/ironman2008Detail.jpg"
-// import HulkDetail from "./images/HulkDetail.jpg"
-// import Ironman2Detail from "./images/ironman2010Detail.jpg"
-// import Thor1 from "./images/thor2011.jpg"
-// import AvengersDetail from "./images/avengers2012Detail.jpg"
-// import Ironman3Detail from "./images/ironman3Detail.jpg"
-// import Thor2Detail from "./images/thor2013Detail.jpg"
-// import Wintersoldier from "./images/wintersoldier2014.jpg"
-// import WintersoldierDetail from "./images/wintersoldier2014Detail.jpg"
 
 export default class Details extends Component {
-    
-    constructor() {
-        super();
-        this.state = {
-            message: 'Hiya'
-        };
+
+    constructor(){
+        super()
+        this.state ={
+            filmDetail: {}
+        }
     }
 
-    componentDidMout() {
-        setTimeout(() => {
-            this.setState({
-                message: 'Hello Hello'
-            })
-        }, 3000);
+    componentDidMount() {
+        let filmId = this.props.match.params.cinema;
+        let filmDetail = FilmDetails().find(film => film.id === filmId);
+        console.log(filmDetail);
+        this.setState({
+            filmDetail // when the key and value are the same
+            // filmDetail: filmDetail
+        });
     }
 
     render() {
-        return (
+        return(
             <div>
-                <h1>this.state.message}</h1>
-                <Link to='/'>To Home Page</Link>
+                <h1 className='filmTitle'>{this.state.filmDetail.title}</h1>
             </div>
         )
     }
-
-
-
-    // function FilmDetail(props) {
-    // return(
-    // <div>
-    //     <Route exact path="/{props.title}" component={props.title}>
-    //         <div className='detail'>
-    //             <div>
-    //                 <h1>{props.title}</h1>
-    //                 <h3>{props.rating}/10</h3>
-    //                 <label>{props.details}</label>
-    //             </div>
-    //             <div>
-    //                 <img src={props.image} alt={props.title}/>
-    //             </div>
-
-    //         </div>
-    //     </Route>
-    // </div>
-    // )
 }
+
+
+
+// function FilmDetail(props) {
+//     return(
+//     <div>
+//         <Route exact path="/{props.title}" component={props.title}>
+//             <div className='detail'>
+//                 <div>
+//                     <h1>{props.title}</h1>
+//                     <h3>{props.rating}/10</h3>
+//                     <label>{props.details}</label>
+//                 </div>
+//                 <div>
+//                     <img src={props.image} alt={props.title}/>
+//                 </div>
+
+//             </div>
+//         </Route>
+//     </div>
+//     )
+// }
+

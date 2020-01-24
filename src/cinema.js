@@ -16,9 +16,16 @@ export default function Cinema() {
         {
           FilmDetails().map(stack => {
             return(
-              <Film key={stack.title} titleUrl={stack.titleUrl} title={stack.title} image={stack.image} rating={stack.rating} details={stack.detail} />
-          )
-          })
+          <Film key={stack.title} 
+            id={stack.id} 
+            titleUrl={stack.id} 
+            title={stack.title} 
+            image={stack.image} 
+            rating={stack.rating} 
+            details={stack.detail} 
+          />
+          )})
+
         }
       </div>
     </div>
