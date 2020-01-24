@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Film({ titleUrl, title, image, details, rating }) {
+export default function Film({ id, title, image, details, rating }) {
   return (
     <div>
-      <Link to={`/${titleUrl}`} className="item">
+      <Link to={`/${id}`} className="item">
         <div className="item">
           <img src={image} alt={title} />
           <div className="overlay">
