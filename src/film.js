@@ -13,7 +13,7 @@ export default function Film({ id, title, image, details, rating }) {
             <p>{details}</p>
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 }
