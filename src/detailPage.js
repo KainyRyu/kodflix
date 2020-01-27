@@ -1,36 +1,33 @@
 import React, { Component } from "react";
-import FilmDatas from "./filmDatas"
-import { Link } from "react-router-dom";
+import FilmDatas from "./filmDatas";
+import { Redirect } from "react-router-dom";
 
 export default class Details extends Component {
+  constructor() {
+    super();
+    this.state = {
+      filmDatas: {}
+    };
+  }
 
-    constructor(){
-        super()
-        this.state ={
-            filmDatas: {}
-        }
-    }
+  componentDidMount() {
+    let filmId = this.props.match.params.cinema;
+    let filmDatas = FilmDatas().find(film => film.id === filmId);
+    this.setState({
+      filmDatas // when the key and value are the same
+      // filmDatas: filmDatas
+    });
+  }
 
-    componentDidMount() {
-        let filmId = this.props.match.params.cinema;
-        let filmDatas = FilmDatas().find(film => film.id === filmId);
-        console.log(filmDatas);
-        this.setState({
-            filmDatas // when the key and value are the same
-            // filmDatas: filmDatas
-        });
-    }
-
-    render() {
-        return(
-            <div>
-                <h1 className='filmTitle'>{this.state.filmDatas.title}</h1>
-            </div>
-        )
-    }
+  render() {
+    return this.state.filmDatas ? (
+      <div>{<h1 className="filmTitle">{this.state.filmDatas.title}</h1>}</div>
+    ) : (
+      <Redirect to="/not-found" />
+    );
+    //   <div>{<h1 className="filmTitle">{this.state.filmDatas.title}</h1>}</div>
+  }
 }
-
-
 
 // function FilmDatas(props) {
 //     return(
@@ -51,4 +48,3 @@ export default class Details extends Component {
 //     </div>
 //     )
 // }
-
