@@ -23,16 +23,14 @@ export default class Details extends Component {
   render() {
     return this.state.filmDatas ? (
         <div>
-          
-            <h1 className="filmTitle">{this.state.filmDatas.title}</h1>
             <div className='detailBg'>
-            <div>
-                <h1></h1>
-                <label></label>
-                <p></p>
+                <div className='details'>
+                    <h1 className="filmTitle">{this.state.filmDatas.title}</h1>
+                    <label>{this.state.filmDatas.details}</label>
+                    <p>{this.state.filmDatas.synopsis}</p>
+                </div>
+                <img src={this.state.filmDatas.detailImg} alt={this.state.filmDatas.id} />
             </div>
-            {/* <img src={} alt={} /> */}
-        </div>
         </div>
     ) : (
       <Redirect to="/not-found" />
