@@ -1,13 +1,23 @@
 import Captain from "./images/captain2011.jpg"
+import captainD from './images/captainDetail.jpg'
 import CaptainMarvel from "./images/captainMarvel2019.jpg"
+import marvelD from './images/captainMarvelDetail.jpg'
 import Ironman1 from "./images/ironman2008.jpg"
-import Hulk from "./images/incrediblehulk2008.jpg"
+import ironman1D from './images/ironman2008Detail.jpg'
+import Hulk from "./images/Hulk.jpg"
+import hulkD from './images/HulkDetail.jpg'
 import Ironman2 from "./images/ironman2010.jpg"
+import ironman2D from './images/ironman2010Detail.jpg'
 import Thor1 from "./images/thor2011.jpg"
+import Thor1D from "./images/thorDetail.jpg"
 import Avengers from "./images/avengers2012.jpg"
+import avengersD from './images/avengers2012Detail.jpg'
 import Ironman3 from "./images/ironman3.jpg"
+import ironman3D from './images/ironman3Detail.jpg'
 import Thor2 from "./images/thor2013.jpg"
+import thor2D from './images/thor2013Detail.jpg'
 import Wintersoldier from "./images/wintersoldier2014.jpg"
+import wintersoldierD from './images/wintersoldier2014Detail.jpg'
 
 export default function FilmDatas () {
     return [

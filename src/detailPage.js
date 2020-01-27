@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import FilmDatas from "./filmDatas";
 import { Redirect } from "react-router-dom";
+import "./film.css";
 
 export default class Details extends Component {
   constructor() {
@@ -21,7 +22,18 @@ export default class Details extends Component {
 
   render() {
     return this.state.filmDatas ? (
-      <div>{<h1 className="filmTitle">{this.state.filmDatas.title}</h1>}</div>
+        <div>
+          
+            <h1 className="filmTitle">{this.state.filmDatas.title}</h1>
+            <div className='detailBg'>
+            <div>
+                <h1></h1>
+                <label></label>
+                <p></p>
+            </div>
+            {/* <img src={} alt={} /> */}
+        </div>
+        </div>
     ) : (
       <Redirect to="/not-found" />
     );

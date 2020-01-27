@@ -4,7 +4,7 @@ import './App.css'
 export default function NotFound() {
     return(
         <h1 className='notfound'>
-            Wrong page
+            PAGE NOT FOUND
         </h1>
     );
 }
