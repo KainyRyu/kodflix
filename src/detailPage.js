@@ -22,16 +22,21 @@ export default class Details extends Component {
 
   render() {
     return this.state.filmDatas ? (
-        <div>
-            <div className='detailBg'>
-                <div className='details'>
-                    <h1 className="filmTitle">{this.state.filmDatas.title}</h1>
-                    <label>{this.state.filmDatas.details}</label>
-                    <p>{this.state.filmDatas.synopsis}</p>
-                </div>
-                <img src={this.state.filmDatas.detailImg} alt={this.state.filmDatas.id} />
-            </div>
+      <div>
+        <div id="detailBg">
+          <div id="details">
+            <h1 className="filmTitle">{this.state.filmDatas.title}</h1>
+            <label>{this.state.filmDatas.detail}</label>
+            <p>{this.state.filmDatas.synopsis}</p>
+          </div>
+          <div>
+            <img id='detailImg'
+                src={this.state.filmDatas.detailImg}
+                alt={this.state.filmDatas.id}
+            />
+          </div>
         </div>
+      </div>
     ) : (
       <Redirect to="/not-found" />
     );
