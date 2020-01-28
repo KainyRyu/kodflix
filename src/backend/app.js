@@ -1,9 +1,10 @@
 const express = require("express");
+const shows = require("./list");
 const app = express();
 const port = 3001;
-const DataB = require("./list");
+// const Data = require("./list");
 
-// app.get("/", (req, res) => res.send("Hello World!"));
-app.get("/", (req, res) => res.send(DataB.Data));
+app.get("/", (req, res) => res.send("Hello world"));
+app.get("/rest/shows", (req, res) => res.send(shows));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

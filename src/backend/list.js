@@ -1,4 +1,4 @@
-let Data = [
+let datas = [
   {
     id: "captain",
     title: "Captain America: The First Avenger",
@@ -60,4 +60,5 @@ let Data = [
       "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier."
   }
 ];
-module.exports = Data;
+
+module.exports = datas;
