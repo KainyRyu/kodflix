@@ -29,11 +29,12 @@ export default class Details extends Component {
             <label>{this.state.filmDatas.detail}</label>
             <p>{this.state.filmDatas.synopsis}</p>
           </div>
-          <div>
+          <div id='divForImage'>
             <img id='detailImg'
                 src={this.state.filmDatas.detailImg}
                 alt={this.state.filmDatas.id}
             />
+            <div className='detailOverlay'></div>
           </div>
         </div>
       </div>

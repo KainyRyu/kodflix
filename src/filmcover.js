@@ -8,10 +8,10 @@ export default function FilmCover({ id, title, image, rating }) {
         <div className="item">
           <img src={image} alt={id} />
           <div className="overlay">
-            <p>
+            <div>
               <label>{title}</label>{title} <br />
               {rating}/10
-            </p>
+            </div>
           </div>
         </div>
       </Link>

@@ -14,8 +14,9 @@ function App() {
           <img className='logo' src={logo} alt='logo' />
         </Link>
         <br />
-        <Cinema />
+          <Cinema />
         <Switch>
+          {/* <Route exact path='/' component={Cinema}></Route> */}
           <Route exact path='/not-found' component={NotFound}></Route>
           <Route exact path="/:cinema" component={Details}></Route>
         </Switch>
