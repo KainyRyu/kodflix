@@ -12,6 +12,9 @@ export default class Details extends Component {
   }
 
   componentDidMount() {
+    fetch("rest/films/")
+      .then(response => response.json()) //promises
+      .then(data => console.log("Backend Return!"));
     let filmId = this.props.match.params.cinema;
     let filmDatas = FilmDatas().find(film => film.id === filmId);
     this.setState({
@@ -29,12 +32,13 @@ export default class Details extends Component {
             <label>{this.state.filmDatas.detail}</label>
             <p>{this.state.filmDatas.synopsis}</p>
           </div>
-          <div id='divForImage'>
-            <img id='detailImg'
-                src={this.state.filmDatas.detailImg}
-                alt={this.state.filmDatas.id}
+          <div id="divForImage">
+            <img
+              id="detailImg"
+              src={this.state.filmDatas.detailImg}
+              alt={this.state.filmDatas.id}
             />
-            <div className='detailOverlay'></div>
+            <div className="detailOverlay"></div>
           </div>
         </div>
       </div>
