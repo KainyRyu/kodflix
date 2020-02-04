@@ -12,7 +12,7 @@ export default class Details extends Component {
   }
 
   componentDidMount() {
-    fetch("rest/films/")
+    fetch("rest/films/:")
       .then(response => response.json()) //promises
       .then(data => console.log("Backend Return!"));
     let filmId = this.props.match.params.cinema;

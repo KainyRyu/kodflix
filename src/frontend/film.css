@@ -3,8 +3,8 @@
 }
 
 .item {
-  width: 600px;
-  height: 900px;
+  width: 400px;
+  height: 600px;
   flex: 0 0 auto;
   justify-content: center;
   position: relative;
