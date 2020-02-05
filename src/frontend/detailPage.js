@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import FilmDatas from "./filmDatas";
 import { Redirect } from "react-router-dom";
-import "./film.css";
 
+import "./film.css";
 
 export default class FilmDetails extends Component {
   constructor() {
@@ -17,8 +17,8 @@ export default class FilmDetails extends Component {
       .then(response => response.json()) //promises
       .then(filmDatas => {
         this.setState({ filmDatas }); // when the key and value are the same
-      // filmDatas: filmDatas
-    })
+        // filmDatas: filmDatas
+      });
   }
 
   render() {
@@ -33,8 +33,8 @@ export default class FilmDetails extends Component {
           <div id="divForImage">
             <img
               id="detailImg"
-              src={FilmDatas.detailImg}
-              alt={FilmDatas.id}
+              src={this.state.filmDatas.detailImg}
+              alt={this.state.filmDatas.id}
             />
             <div className="detailOverlay"></div>
           </div>

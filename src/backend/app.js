@@ -5,7 +5,7 @@ const port = 3001;
 
 app.get("/", (req, res) => res.send("Hello Kodiri!"));
 
-app.get("/rest/film/:id?", (req, res) => {
+app.get("/rest/films/:id?", (req, res) => {
     res.send(getFilms(req.params.id));
 });
 
