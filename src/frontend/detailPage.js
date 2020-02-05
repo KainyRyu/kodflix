@@ -33,8 +33,8 @@ export default class FilmDetails extends Component {
           <div id="divForImage">
             <img
               id="detailImg"
-              src={this.state.filmDatas.detailImg}
-              alt={this.state.filmDatas.id}
+              src={FilmDatas.detailImg}
+              alt={FilmDatas.id}
             />
             <div className="detailOverlay"></div>
           </div>
