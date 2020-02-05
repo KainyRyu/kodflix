@@ -3,8 +3,10 @@ import './App.css'
 
 export default function NotFound() {
     return(
-        <h1 className='notfound'>
-            PAGE NOT FOUND
-        </h1>
+        <div className='notfound'>
+            <h1>
+                PAGE NOT FOUND
+            </h1>
+        </div>
     );
 }

@@ -3,7 +3,8 @@ import FilmDatas from "./filmDatas";
 import { Redirect } from "react-router-dom";
 import "./film.css";
 
-export default class Details extends Component {
+
+export default class FilmDetails extends Component {
   constructor() {
     super();
     this.state = {
@@ -14,13 +15,10 @@ export default class Details extends Component {
   componentDidMount() {
     fetch("rest/films/:")
       .then(response => response.json()) //promises
-      .then(data => console.log("Backend Return!"));
-    let filmId = this.props.match.params.cinema;
-    let filmDatas = FilmDatas().find(film => film.id === filmId);
-    this.setState({
-      filmDatas // when the key and value are the same
+      .then(filmDatas => {
+        this.setState({ filmDatas }); // when the key and value are the same
       // filmDatas: filmDatas
-    });
+    })
   }
 
   render() {

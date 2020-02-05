@@ -38,8 +38,11 @@
     position: relative;
   }
 } */
-
 .notfound {
-  color: white;
-  
+  background-image: url("https://images.unsplash.com/photo-1529753253655-470be9a42781?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+  background-size: cover;
+}
+
+.notfound h1{
+  color: white; 
 }

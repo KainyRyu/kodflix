@@ -67,7 +67,7 @@ module.exports = function(id) {
     if (film) {
       return film;
     } else {
-      return `Sorry, ${id} is not available on Kodiri`
+      return `Sorry, ${id} is not available on Kodflix`
     }
   } else {
     return films;
