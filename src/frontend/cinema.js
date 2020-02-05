@@ -1,13 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import FilmCover from "./filmcover";
 import FilmDatas from "./filmDatas";
-
-// import Spiderman from "./images/Spiderman.jpg";
-// import Avengers from "./images/Avengers.jpg";
-// import Thor from "./images/Thor.jpg";
-// import Ironman from "./images/Ironman.jpg";
-// import Hulk from "./images/Hulk.jpg";
-// import Civilwar from "./images/Civilwar.jpg";
 
 export default function Cinema() {
   return (

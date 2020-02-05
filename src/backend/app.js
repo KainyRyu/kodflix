@@ -1,12 +1,12 @@
 const express = require("express");
-const getFilms = require("./list");
+const getFilms = require("./filmDatas");
 const app = express();
 const port = 3001;
 
 app.get("/", (req, res) => res.send("Hello Kodiri!"));
 
-app.get("/rest/films/:id?", (req, res) => {
-    res.send(getFilms(req.params.id));
+app.get("/rest/films/", (req, res) => {
+  res.send(getFilms());
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

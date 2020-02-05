@@ -13,22 +13,25 @@ export default class FilmDetails extends Component {
   }
 
   componentDidMount() {
-    fetch("rest/films/:")
+    fetch("/rest/films/")
       .then(response => response.json()) //promises
       .then(filmDatas => {
+        console.log("hello", filmDatas)
         this.setState({ filmDatas }); // when the key and value are the same
         // filmDatas: filmDatas
       });
   }
 
   render() {
-    return this.state.filmDatas ? (
+    let datas = this.state.filmDatas
+    return datas ? (
       <div>
         <div id="detailBg">
           <div id="details">
             <h1 className="filmTitle">{this.state.filmDatas.title}</h1>
             <label>{this.state.filmDatas.detail}</label>
             <p>{this.state.filmDatas.synopsis}</p>
+            {console.log(this.state.filmDatas[0]) && this.state.filmData[0].id}
           </div>
           <div id="divForImage">
             <img
@@ -36,6 +39,7 @@ export default class FilmDetails extends Component {
               src={this.state.filmDatas.detailImg}
               alt={this.state.filmDatas.id}
             />
+            
             <div className="detailOverlay"></div>
           </div>
         </div>
