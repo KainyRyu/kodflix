@@ -1,10 +1,11 @@
 .coverCover {
-  padding: 50px;
+  padding: 30px;
 }
 
+
 .item {
-  width: 400px;
-  height: 600px;
+  width: 200px;
+  height: 300px;
   flex: 0 0 auto;
   justify-content: center;
   position: relative;
@@ -86,4 +87,16 @@ img {
   height: 100%;
   background: linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 100%);;
   position: absolute;
+}
+@media (max-width: 600px) {
+  
+  .coverCover {
+    padding: 30px;
+  }
+  
+  .item {
+    width: 400px;
+    height: 600px;
+  }
+
 }
