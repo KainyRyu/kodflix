@@ -10,7 +10,7 @@ export default function FilmDetails(props) {
   const [filmDatas, setFilmDatas] = useState([]);
 
   const fetchItems = async () => {
-    await fetch("/rest/films/")
+    await fetch("/films/")
       .then(res => {
         if (!res.status) throw new Error("Something went wrong!");
         return res.json();
