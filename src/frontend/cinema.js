@@ -4,22 +4,20 @@ import FilmDatas from "./filmDatas";
 
 export default function Cinema() {
   return (
-    <div>
-      <div className="container">
-        {FilmDatas().map(stack => {
-          return (
-            <FilmCover
-              key={stack.title}
-              id={stack.id}
-              titleUrl={stack.id}
-              title={stack.title}
-              image={stack.image}
-              rating={stack.rating}
-              details={stack.detail}
-            />
-          );
-        })}
-      </div>
+    <div className="container">
+      {FilmDatas().map(stack => {
+        return (
+          <FilmCover
+            key={stack.title}
+            id={stack.id}
+            titleUrl={stack.id}
+            title={stack.title}
+            image={stack.image}
+            rating={stack.rating}
+            details={stack.detail}
+          />
+        );
+      })}
     </div>
   );
 }

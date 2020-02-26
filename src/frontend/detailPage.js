@@ -22,18 +22,14 @@ export default function FilmDetails(props) {
   console.log(film)
   return film ? (
     <div id="detailBg">
-        <>
-          <div id="details">
-            <h1 className="filmTitle">{film.title}</h1>
-            <label>{film.detail}</label>
-            <p>{film.synopsis}</p>
-          </div>
-          <div id="divForImage">
-            {/* <img id="detailImg" src={film.detailImg} alt={film.id} /> */}
-
-            <div className="detailOverlay"></div>
-          </div>
-        </>
+      <div id="details">
+        <h1 className="filmTitle">{film.title}</h1>
+        <label>{film.detail}</label>
+        <p>{film.synopsis}</p>
+      </div>
+      <div id="divForImage">
+        <img id="detailImg" src={require(`../frontend/images/details/${film.id}.jpg`)} alt={film.id} />
+      </div>
     </div>
   ) : (
     // <Redirect to="/not-found" />
