@@ -17,8 +17,9 @@ export default function Details(props) {
       .then(res => setFilmDatas(res))
       .catch(err => console.log(err));
   };
+
   const film = filmDatas.find(filmData => filmData.id === props.match.params.cinema);
-  console.log(film)
+  
   return film ? (
     <div id="detailBg">
       <div id="details">

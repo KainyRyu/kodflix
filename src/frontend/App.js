@@ -1,5 +1,5 @@
 import React from "react";
-import Cinema from "./cinema";
+import Cinema from "./Cinema";
 import Details from "./details/Details";
 import logo from "./logo.png";
 import NotFound from "./notFound";
