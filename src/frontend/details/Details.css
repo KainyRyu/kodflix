@@ -1,0 +1,26 @@
+#detailBg {
+  height: 600px;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  margin: 0;
+}
+
+#detailBg #details {
+  padding: 10%;
+  flex-grow: 10;
+  color: white;
+}
+#divForImage {
+  position: relative;
+}
+#detailImg {
+  width: 100%;
+  height: auto;
+}
+
+.detailOverlay {
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 100%);;
+  position: absolute;
+}

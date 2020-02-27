@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require('path');
-const getFilms = require("./filmDatas");
+const getFilms = require("./FilmDatas");
 const port = process.env.PORT || 3001;
 
 // app.get("/", (req, res) => res.send("Hello Kodiri!"));

@@ -1,7 +1,5 @@
 import React, { Component, useEffect, useState } from "react";
-import FilmDatas from "./filmDatas";
-import { Redirect } from "react-router-dom";
-import "./film.css";
+import "./Film.css";
 
 function FilmDetails() {
     useEffect(() => {
@@ -36,3 +34,27 @@ function FilmDetails() {
         </div>
     )
 }
+
+
+// ===================================================
+// <Router>
+//   <Switch>
+//     <Route exact path="/">
+//       <Home />
+//     </Route>
+//     <Route path="/about">
+//       <About />
+//     </Route>
+//   </Switch>
+// </Router>;
+
+// function Page() {
+//   return(
+//     <h1> WHATEVER</h1>
+//   )
+
+// }
+
+// <Route path="/page">
+//   <Page />
+// </Route>

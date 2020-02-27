@@ -1,13 +1,13 @@
 import React from "react";
-import FilmCover from "./filmcover";
-import FilmDatas from "./filmDatas";
+import Cover from "./cover/Cover";
+import FilmDatas from "./FilmDatas";
 
 export default function Cinema() {
   return (
     <div className="container">
       {FilmDatas().map(stack => {
         return (
-          <FilmCover
+          <Cover
             key={stack.title}
             id={stack.id}
             titleUrl={stack.id}
@@ -21,26 +21,3 @@ export default function Cinema() {
     </div>
   );
 }
-
-// ===================================================
-// <Router>
-//   <Switch>
-//     <Route exact path="/">
-//       <Home />
-//     </Route>
-//     <Route path="/about">
-//       <About />
-//     </Route>
-//   </Switch>
-// </Router>;
-
-// function Page() {
-//   return(
-//     <h1> WHATEVER</h1>
-//   )
-
-// }
-
-// <Route path="/page">
-//   <Page />
-// </Route>

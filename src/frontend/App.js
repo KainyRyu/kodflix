@@ -1,6 +1,6 @@
 import React from "react";
 import Cinema from "./cinema";
-import FilmDetails from "./detailPage";
+import Details from "./details/Details";
 import logo from "./logo.png";
 import NotFound from "./notFound";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -18,7 +18,7 @@ function App() {
         <Switch>
           {/* <Route exact path='/' component={Cinema}></Route> */}
           <Route exact path="/not-found" component={NotFound}></Route>
-          <Route exact path="/:cinema" component={FilmDetails}></Route>
+          <Route exact path="/:cinema" component={Details}></Route>
         </Switch>
       </div>
     </Router>

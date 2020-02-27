@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-// import FilmDatas from "./filmDatas";
-import "./film.css";
+import "./Details.css";
 
-export default function FilmDetails(props) {
+export default function Details(props) {
   useEffect(() => {
     fetchItems();
   }, []);
@@ -28,7 +27,7 @@ export default function FilmDetails(props) {
         <p>{film.synopsis}</p>
       </div>
       <div id="divForImage">
-        <img id="detailImg" src={require(`../frontend/images/details/${film.id}.jpg`)} alt={film.id} />
+        <img id="detailImg" src={require(`../../frontend/images/details/${film.id}.jpg`)} alt={film.id} />
       </div>
     </div>
   ) : (
