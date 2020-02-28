@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import NotFound from '../notFound';
 import "./Details.css";
 
 export default function Details(props) {
@@ -7,7 +8,7 @@ export default function Details(props) {
   }, []);
 
   const [filmDatas, setFilmDatas] = useState([]);
-
+  
   const fetchItems = async () => {
     await fetch("/films/")
       .then(res => {
@@ -19,7 +20,7 @@ export default function Details(props) {
   };
 
   const film = filmDatas.find(filmData => filmData.id === props.match.params.cinema);
-  
+
   return film ? (
     <div id="detailBg">
       <div id="details">
@@ -28,11 +29,11 @@ export default function Details(props) {
         <p>{film.synopsis}</p>
       </div>
       <div id="divForImage">
-        <img id="detailImg" src={require(`../../frontend/images/details/${film.id}.jpg`)} alt={film.id} />
+        <img id="detailImg" src={require(`../images/details/${film.id}.jpg`)} alt={film.id} />
       </div>
     </div>
   ) : (
     // <Redirect to="/not-found" />
-    <div>Pick a movie!</div>
+    <NotFound />
   );
 }

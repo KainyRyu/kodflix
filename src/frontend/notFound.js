@@ -5,7 +5,7 @@ export default function NotFound() {
     return(
         <div className='notfound'>
             <h1>
-                PAGE NOT FOUND
+                The result not found
             </h1>
         </div>
     );
