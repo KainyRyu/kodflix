@@ -33,7 +33,6 @@ export default function Details(props) {
       </div>
     </div>
   ) : (
-    // <Redirect to="/not-found" />
     <NotFound />
   );
 }
