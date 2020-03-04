@@ -1,11 +1,14 @@
-#detailBg {
+#detail-bg {
   height: 600px;
+  width: 100vw;
   background-color: rgb(40, 40, 40);
   display: flex;
+  flex-flow: column;
+  justify-content: center;
   margin: 0;
 }
 
-#detailBg #details {
+#detail-bg #details {
   padding: 10%;
   flex-grow: 10;
   color: white;
@@ -23,4 +26,10 @@
   height: 100%;
   background: linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 100%);;
   position: absolute;
+}
+
+@media (min-width: 600px) {
+  #detail-bg {
+    flex-flow: row-reverse;
+  }
 }

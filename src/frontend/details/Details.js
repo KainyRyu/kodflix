@@ -22,14 +22,14 @@ export default function Details(props) {
   const film = filmDatas.find(filmData => filmData.id === props.match.params.cinema);
 
   return film ? (
-    <div id="detailBg">
+    <div id="detail-bg">
+      <div id="divForImage">
+        <img id="detailImg" src={require(`../images/details/${film.id}.jpg`)} alt={film.id} />
+      </div>
       <div id="details">
         <h1 className="filmTitle">{film.title}</h1>
         <label>{film.detail}</label>
         <p>{film.synopsis}</p>
-      </div>
-      <div id="divForImage">
-        <img id="detailImg" src={require(`../images/details/${film.id}.jpg`)} alt={film.id} />
       </div>
     </div>
   ) : (
