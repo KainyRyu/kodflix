@@ -20,7 +20,6 @@ export default function Details(props) {
   };
 
   const film = filmDatas.find(filmData => filmData.id === props.match.params.cinema);
-
   return film ? (
     <div id="detail-bg">
       <div id="divForImage">
@@ -32,7 +31,5 @@ export default function Details(props) {
         <p>{film.synopsis}</p>
       </div>
     </div>
-  ) : (
-    <NotFound />
-  );
+  ) : <NotFound />;
 }
